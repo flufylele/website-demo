@@ -1,7 +1,16 @@
 /* General Styles */
-:root {
+/*:root {
     --primary-color: #8B5A2B;
     --secondary-color: #D2B48C;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --white: #fff;
+    --black: #000;
+    --transition: all 0.3s ease;
+}*/
+:root {
+    --primary-color: #19b0f4;
+    --secondary-color: #55c6fa;
     --dark-color: #333;
     --light-color: #f4f4f4;
     --white: #fff;
@@ -83,8 +92,9 @@ ul {
 }
 
 .btn:hover {
-    background-color: #6d4722;
+    background-color: #0c5d82;
     transform: translateY(-3px);
+    color: var(--white);
 }
 
 section {
@@ -169,7 +179,7 @@ nav ul li a:hover::after {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Media/banner.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     text-align: center;
@@ -303,7 +313,7 @@ nav ul li a:hover::after {
     left: 0;
     width: 100%;
     padding: 20px;
-    background: rgba(139, 90, 43, 0.9);
+    background: rgba(34, 156, 212, 0.9);
     color: var(--white);
     transition: var(--transition);
 }
@@ -692,7 +702,7 @@ footer {
 }
 
 .filter-btn:hover {
-    background: #6d4722;
+    background: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -702,7 +712,7 @@ footer {
     left: 0;
     width: 100%;
     padding: 20px;
-    background: rgba(139, 90, 43, 0.9);
+    background: rgba(34, 156, 212, 0.9);
     color: var(--white);
     text-align: center;
 }
