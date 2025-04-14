@@ -107,26 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showTestimonial(newIndex);
     }, 5000);
     
-    // Form submission
-    const contactForm = document.getElementById('form-contact');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show an alert
-            alert(`Mulțumim pentru mesaj, ${name}! Vă vom contacta în cel mai scurt timp.`);
-            
-            // Reset form
-            contactForm.reset();
-        });
-    }
+    
     
     // Newsletter form
     const newsletterForm = document.getElementById('newsletter-form');
